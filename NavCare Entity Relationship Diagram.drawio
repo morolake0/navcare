@@ -1,0 +1,55 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/26.2 Safari/605.1.15">
+  <diagram name="Page-1" id="x7rjoN0Z2zw54IvJqu29">
+    <mxGraphModel dx="1793" dy="600" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="OEM5Ow-HrGsV3w7NNzjs-19" edge="1" parent="1" source="OEM5Ow-HrGsV3w7NNzjs-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;defaultLabelBackgroundColor=gap;endArrow=ERmany;endFill=0;startArrow=ERone;startFill=0;" target="OEM5Ow-HrGsV3w7NNzjs-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="OEM5Ow-HrGsV3w7NNzjs-5" parent="1" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=50;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;arcSize=4;whiteSpace=wrap;html=1;" value="Nurse/User" vertex="1">
+          <mxGeometry height="130" width="160" x="440" y="165" as="geometry" />
+        </mxCell>
+        <mxCell id="OEM5Ow-HrGsV3w7NNzjs-6" parent="OEM5Ow-HrGsV3w7NNzjs-5" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;fontSize=12;verticalAlign=top;rotatable=0;part=1;html=1;whiteSpace=wrap;" value="(PK) NurseID int&lt;div&gt;firstName text&lt;/div&gt;&lt;div&gt;lastName text&lt;/div&gt;&lt;div&gt;username UNIQUE text&lt;/div&gt;&lt;div&gt;passwordHash text&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="80" width="160" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="OEM5Ow-HrGsV3w7NNzjs-17" edge="1" parent="1" source="OEM5Ow-HrGsV3w7NNzjs-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;defaultLabelBackgroundColor=gap;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endArrow=ERone;endFill=0;startArrow=ERmany;startFill=0;" target="OEM5Ow-HrGsV3w7NNzjs-10" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="OEM5Ow-HrGsV3w7NNzjs-7" parent="1" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=50;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;arcSize=4;whiteSpace=wrap;html=1;" value="Visit" vertex="1">
+          <mxGeometry height="190" width="160" x="160" y="395" as="geometry" />
+        </mxCell>
+        <mxCell id="OEM5Ow-HrGsV3w7NNzjs-8" parent="OEM5Ow-HrGsV3w7NNzjs-7" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;fontSize=12;verticalAlign=top;rotatable=0;part=1;html=1;whiteSpace=wrap;" value="(PK) VisitID int&lt;div&gt;(FK) ListID int&lt;/div&gt;&lt;div&gt;(FK) PatientID int&lt;/div&gt;&lt;div&gt;orderInRoute int&lt;/div&gt;&lt;div&gt;priorityStatus boolean&lt;/div&gt;&lt;div&gt;completedStatus boolean&lt;/div&gt;&lt;div&gt;windowStartTime time&lt;/div&gt;&lt;div&gt;windowEndTime time&lt;/div&gt;&lt;div&gt;priorityReason text&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="140" width="160" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="OEM5Ow-HrGsV3w7NNzjs-9" parent="1" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=50;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;arcSize=4;whiteSpace=wrap;html=1;" value="List" vertex="1">
+          <mxGeometry height="160" width="160" x="440" y="385" as="geometry" />
+        </mxCell>
+        <mxCell id="OEM5Ow-HrGsV3w7NNzjs-10" parent="OEM5Ow-HrGsV3w7NNzjs-9" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;fontSize=12;verticalAlign=top;rotatable=0;part=1;html=1;whiteSpace=wrap;" value="(PK) ListID int&lt;div&gt;(FK) NurseID int&lt;/div&gt;&lt;div&gt;date date&lt;/div&gt;&lt;div&gt;startLocationLat real&lt;/div&gt;&lt;div&gt;startLocationLong real&lt;/div&gt;&lt;div&gt;endLocationLat real&lt;/div&gt;&lt;div&gt;endLocationLong real&lt;/div&gt;" vertex="1">
+          <mxGeometry height="110" width="160" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="OEM5Ow-HrGsV3w7NNzjs-24" edge="1" parent="1" source="OEM5Ow-HrGsV3w7NNzjs-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;defaultLabelBackgroundColor=gap;endArrow=ERmany;endFill=0;startArrow=ERone;startFill=0;" target="OEM5Ow-HrGsV3w7NNzjs-13">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="OEM5Ow-HrGsV3w7NNzjs-11" parent="1" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=50;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;arcSize=4;whiteSpace=wrap;html=1;" value="Address" vertex="1">
+          <mxGeometry height="120" width="160" x="-80" y="190" as="geometry" />
+        </mxCell>
+        <mxCell id="OEM5Ow-HrGsV3w7NNzjs-12" parent="OEM5Ow-HrGsV3w7NNzjs-11" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;fontSize=12;verticalAlign=top;rotatable=0;part=1;html=1;whiteSpace=wrap;" value="(PK) AddressID int&lt;div&gt;fullAddress text&lt;/div&gt;&lt;div&gt;latCoordinates real&lt;/div&gt;&lt;div&gt;longCoordinates real&lt;/div&gt;" vertex="1">
+          <mxGeometry height="70" width="160" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="OEM5Ow-HrGsV3w7NNzjs-20" edge="1" parent="1" source="OEM5Ow-HrGsV3w7NNzjs-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;defaultLabelBackgroundColor=gap;endArrow=ERmany;endFill=0;startArrow=ERone;startFill=0;" target="OEM5Ow-HrGsV3w7NNzjs-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="OEM5Ow-HrGsV3w7NNzjs-13" parent="1" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=50;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;arcSize=4;whiteSpace=wrap;html=1;" value="Patient" vertex="1">
+          <mxGeometry height="150" width="160" x="160" y="175" as="geometry" />
+        </mxCell>
+        <mxCell id="OEM5Ow-HrGsV3w7NNzjs-14" parent="OEM5Ow-HrGsV3w7NNzjs-13" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;fontSize=12;verticalAlign=top;rotatable=0;part=1;html=1;whiteSpace=wrap;" value="(PK) PatientID int&lt;div&gt;firstName text&lt;/div&gt;&lt;div&gt;lastName text&lt;/div&gt;&lt;div&gt;carePlan text&lt;/div&gt;&lt;div&gt;(FK) AddressID int&lt;/div&gt;&lt;div&gt;insulinType text&lt;/div&gt;" vertex="1">
+          <mxGeometry height="100" width="160" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="OEM5Ow-HrGsV3w7NNzjs-25" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;font style=&quot;font-size: 25px;&quot;&gt;NavCare Entity Relationship Diagram&lt;/font&gt;" vertex="1">
+          <mxGeometry height="90" width="420" x="60" y="40" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
